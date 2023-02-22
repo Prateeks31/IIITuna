@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+.box1{
+
+  height: 200px;
+}
+
+.navbar-item{
+  text-decoration: none;
+}
+
+.buttons{
+  text-decoration: none;
+}
+.navbar-end{
+  text-decoration: none;
+}
+
+.box3{
+  text-decoration: none ;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.box4{
+  margin: 100px;
+}
+
+.shadow-box5{
+  background-color: #e5e7eb;
+}
+
+.navbar{
+  background-color: #e5e7eb !important;
+}
