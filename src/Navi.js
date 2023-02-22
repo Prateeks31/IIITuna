@@ -1,82 +1,64 @@
-import React, { useState } from "react";
-
+import React from "react";
+import { Link } from "react-router-dom";
 import Nav from "bulma";
-import 'bulma/css/bulma.min.css';
-import './App.css';
+import "bulma/css/bulma.min.css";
+import "./App.css";
 
-
-
-
-class Navi extends React.Component {
-  render() {
-     return (
-        <div >
-           <nav class="navbar" role="navigation" aria-label="main navigation" >
+const Navi = () => {
+  return (
+    <div>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://iiitu.ac.in/">
+          <Link class="navbar-item" to={"https://iiitu.ac.in/"}>
             <img src="iiituna.png" width="100" height="68"></img>
-          </a>
-      
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          </Link>
+
+          <Link
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-          </a>
+          </Link>
         </div>
-      
+
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item">
-              
-              Home
-            </a>
-      
-            <a class="navbar-item">
-              Attendance
-            </a>
-      
+            <Link class="navbar-item" >Home</Link>
+
+            <Link class="navbar-item" to={"/attendance"}>Attendance</Link>
+
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-item" >
-                More
-              </a>
-      
+              <Link class="navbar-item">More</Link>
+
               <div class="navbar-dropdown">
-                <a class="navbar-item">
-                  About
-                </a>
-                <a class="navbar-item">
-                  Jobs
-                </a>
-                <a class="navbar-item">
-                  Contact
-                </a>
+                <Link class="navbar-item">About</Link>
+                <Link class="navbar-item">Jobs</Link>
+                <Link class="navbar-item">Contact</Link>
                 <hr class="navbar-divider"></hr>
-                <a class="navbar-item">
-                  Report an issue
-                </a>
+                <Link class="navbar-item">Report an issue</Link>
               </div>
             </div>
           </div>
-      
+
           <div class="navbar-end">
             <div class="navbar-item">
-              
               <div class="buttons">
-                <a class="button is-danger">
-                  <strong >Sign up</strong>
-                </a>
-                
-                <a class="button is-light">
-                  Log in
-                </a>
-              
+                <Link class="button is-danger">
+                  <strong>Sign up</strong>
+                </Link>
+
+                <Link class="button is-light">Log in</Link>
               </div>
             </div>
           </div>
         </div>
       </nav>
-        </div>
-     )
-  }
-}
+    </div>
+  );
+};
 export default Navi;

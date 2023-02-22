@@ -1,0 +1,29 @@
+.card{
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    
+    margin: 1.5rem;
+    box-shadow: inset;    
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: larger;
+    margin: 1rem;
+}
+
+.card_p{
+    text-align: center;
+    line-height: 30px;
+}
+
+.flx{
+    display: flex;
+}
+
+.logo{
+    margin-bottom: 1rem;
+}
