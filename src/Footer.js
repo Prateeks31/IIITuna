@@ -1,11 +1,11 @@
-import { CDBFooter } from 'cdbreact';
+ import { CDBFooter } from 'cdbreact';
+import {CDBFooterLink} from 'cdbreact';
 import React, { Fragment } from 'react';
-import { CDBFooterLink, CDBBox, CDBBtn, CDBIcon } from 'cdbreact';
+import {  CDBBox, CDBBtn, CDBIcon } from 'cdbreact';
 import "./App.css";
 
 export const Footer = () => {
-  return (
-    <>
+  return (    <>
    
     <CDBFooter className="shadow-box5">
       <CDBBox display="flex" flex="column" className="mx-auto py-5" style={{ width: '90%' }}>
@@ -16,8 +16,8 @@ export const Footer = () => {
               <span className="ml-3 h5 font-weight-bold box5">IIIT Una</span>
             </a>
             <p className="my-3" style={{ width: '400px' }}>
-            Indian Institute of Information Technology Una<br></br>
-Permanent Campus: Vill. Saloh, Teh. Haroli, Distt. Una <br></br>Himachal Pradesh-177209
+                Indian Institute of Information Technology Una<br></br>
+                Permanent Campus: Vill. Saloh, Teh. Haroli, Distt. Una <br></br>Himachal Pradesh-177209
             </p>
             <CDBBox display="flex" className="mt-4">
               <CDBBtn flat color="dark">
@@ -72,5 +72,8 @@ Permanent Campus: Vill. Saloh, Teh. Haroli, Distt. Una <br></br>Himachal Pradesh
     </>
   );
   
-};
+}; 
+
+
+
 export default Footer;
